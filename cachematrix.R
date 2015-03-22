@@ -7,7 +7,7 @@
 ##The function must be relationed to an  object
 ## Example:   mc<-makeCacheMatrix()    
 ##Where mc will contain the makeCacheMatrix and its subfunctions
-The original matrix must be asigned in the set subfunction
+##The original matrix must be asigned in the set() subfunction
 ##Example x<-matrix(elements, rows, columns)
 ## mc.set(x)
 
@@ -36,7 +36,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-##This function will call the object contains makeCacheMatrix
+##This function will call the subfunctions contained in makeCacheMatrix 
+##and present the inverse matrix
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
   m <- x$getSolve()
